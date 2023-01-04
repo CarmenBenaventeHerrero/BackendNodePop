@@ -33,7 +33,7 @@ router.get('/', async (req, res, next) => {
     const filter = {};
 
     if (name) {
-      filter.name = new RegExp('^' + name, "i"); ;
+      filter.name = name;
     }
 
     if (tags) {
@@ -60,10 +60,10 @@ router.get('/', async (req, res, next) => {
       }else{
         filter.price = price;
         }
-        }
+      }
 
-    const anuncios = await Anuncio.list(filter, skip, limit, fields, sort); 
-      res.json({ ads: anuncios });
+    const anuncios = await Anuncio.listar(filter, skip, limit, fields, sort); 
+      res.json({ result: anuncios });
 
     }catch(err){
         next(err);
