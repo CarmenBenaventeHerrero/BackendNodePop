@@ -66,22 +66,20 @@ GET /api/anuncios
 }
 ```
 
-Buscar ejemplos de filtros: 
+Ejemplos de filtros: 
 - Filtro por nombre: http://localhost:3000/api/anuncios?name=silla
-
-- Filtro por venta: http://localhost:3000/api/anuncios?venta=true
 
 - Filtro por precio: http://localhost:3000/api/anuncios?price=73 
 
 - Filtro por tag: http://localhost:3000/api/anuncios?tags=mobile
+
+- Filtro por venta: http://localhost:3000/api/anuncios?venta=true
 
 - Paginación: http://localhost:3000/api/anuncios?skip=2&limit=1
 
 - Ordenación: http://localhost:3000/api/anuncios?sort=price
 
 - Selección campos: http://localhost:3000/api/anuncios?fields=name
-
-- Crear un nuevo anuncio: http://localhost:3000/api/anuncios
 
 - Obtener imagenes: http://localhost:3000/images/sofa.jpeg
 

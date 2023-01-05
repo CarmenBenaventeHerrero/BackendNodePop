@@ -30,7 +30,7 @@ async function initAnuncio() {
   const result = await Anuncio.deleteMany();
   console.log(`Eliminados ${result.deletedCount} anuncios.`);
 
-  // crear agentes iniciales
+  // crear anuncios iniciales
   const inserted = await Anuncio.insertMany([
     {name: "silla", venta: "true", price: 73, photo: "foto3", tags: "work"},
     {name: "iphone10", venta: "false", price: 345, photo: "foto2", tags: "mobile"},
